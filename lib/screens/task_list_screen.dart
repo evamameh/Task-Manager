@@ -78,7 +78,7 @@ class _StatsBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       key: const Key('stats_bar'),
-      color: Theme.of(context).colorScheme.surfaceContainerHighest,
+      color: Theme.of(context).colorScheme.surface,
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,

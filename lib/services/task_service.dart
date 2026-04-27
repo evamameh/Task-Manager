@@ -40,8 +40,8 @@ class TaskService {
   }
 
   Map<String, int> get statistics => {
-        'total': _tasks.length,
-        'completed': _tasks.where((t) => t.isCompleted).length,
-        'overdue': _tasks.where((t) => t.isOverdue).length,
-      };
+    'total': _tasks.length,
+    'completed': _tasks.where((t) => t.isCompleted).length,
+    'overdue': _tasks.where((t) => t.isOverdue).length,
+  };
 }

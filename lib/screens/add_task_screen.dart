@@ -39,14 +39,14 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
   void _submit() {
     if (!_formKey.currentState!.validate()) return;
     context.read<TaskProvider>().addTask(
-          Task(
-            id: const Uuid().v4(),
-            title: _titleController.text.trim(),
-            description: _descController.text.trim(),
-            priority: _priority,
-            dueDate: _dueDate,
-          ),
-        );
+      Task(
+        id: const Uuid().v4(),
+        title: _titleController.text.trim(),
+        description: _descController.text.trim(),
+        priority: _priority,
+        dueDate: _dueDate,
+      ),
+    );
     Navigator.pop(context);
   }
 

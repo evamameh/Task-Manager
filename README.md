@@ -1,40 +1,17 @@
-# Exercise Overview & Learning Objectives
+# task_manager_clean
 
-This exercise assesses a student's ability to write meaningful automated tests for a Flutter application. Students are given a partially-built Task Manager app and are required to produce two test files that cover both business logic (unit tests) and UI behavior (widget tests). The exercise simulates a real-world scenario where a developer is responsible for quality assurance before a feature ships.
+A new Flutter project.
 
-## 1.1 The Application: Task Manager
+## Getting Started
 
-Students receive a pre-built Flutter project called task_manager. The app allows users to:
+This project is a starting point for a Flutter application.
 
-* Create tasks with a title, description, priority (low / medium / high), and due date
-* Mark tasks as complete or incomplete
-* Filter tasks by status (all / active / completed)
-* Sort tasks by priority or due date
-* Delete tasks
-* Compute statistics (total, completed, overdue count)
+A few resources to get you started if this is your first Flutter project:
 
-### Project Structure Provided to Students
+- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-| File | Description |
-|------|-------------|
-| `lib/models/task.dart` | Task data model |
-| `lib/services/task_service.dart` | Business logic layer |
-| `lib/providers/task_provider.dart` | State management (ChangeNotifier) |
-| `lib/screens/task_list_screen.dart` | Main list UI |
-| `lib/screens/add_task_screen.dart` | Add/edit task form UI |
-| `lib/widgets/task_tile.dart` | Individual task list item widget |
-| `pubspec.yaml` | Already includes flutter_test, mockito, provider |
-
-## 1.2 Learning Objectives
-
-Upon completing this exercise, students should demonstrate the ability to:
-
-1. Write isolated unit tests for model classes and service layers
-2. Use `setUp()` and `tearDown()` to manage test state lifecycle
-3. Test edge cases and boundary conditions, not just the happy path
-4. Use `expect()` with appropriate matchers (equals, isTrue, throwsA, etc.)
-5. Pump and render Flutter widgets in a test environment using `WidgetTester`
-6. Find widgets using finder strategies (byType, byKey, byText)
-7. Simulate user interactions (tap, enterText, drag) using `WidgetTester`
-8. Verify widget state changes after interactions
-9. Mock dependencies using Mockito to isolate the unit under test
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

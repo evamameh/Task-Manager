@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = task_manager
+PRODUCT_NAME = task_manager_clean
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = ph.edu.usjr.firstapp.taskManager
+PRODUCT_BUNDLE_IDENTIFIER = com.example.taskManagerClean
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2026 ph.edu.usjr.first_app. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2026 com.example. All rights reserved.

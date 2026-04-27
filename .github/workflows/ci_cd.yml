@@ -63,11 +63,10 @@ jobs:
             --coverage \
             --reporter=json > test-results.json
  
-      - name: Run widget tests
+      - name: Run all tests
         run: |
-          flutter test test/widget/ \
-            --coverage \
-            --reporter=json >> test-results.json
+          flutter test --coverage \
+            --reporter=json > test-results.json
  
       - name: Upload test results
         uses: actions/upload-artifact@v4

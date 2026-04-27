@@ -87,7 +87,8 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
               // ── Priority ───────────────────────────────────────────
               DropdownButtonFormField<Priority>(
                 key: const Key('priority_dropdown'),
-                initialValue: _priority,
+                // ignore: deprecated_member_use
+                value: _priority,
                 decoration: const InputDecoration(labelText: 'Priority'),
                 items: Priority.values
                     .map(

@@ -38,20 +38,20 @@ class Task {
   bool get isOverdue => !isCompleted && dueDate.isBefore(DateTime.now());
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'title': title,
-    'description': description,
-    'priority': priority.index,
-    'dueDate': dueDate.toIso8601String(),
-    'isCompleted': isCompleted,
-  };
+        'id': id,
+        'title': title,
+        'description': description,
+        'priority': priority.index,
+        'dueDate': dueDate.toIso8601String(),
+        'isCompleted': isCompleted,
+      };
 
   factory Task.fromJson(Map<String, dynamic> json) => Task(
-    id: json['id'],
-    title: json['title'],
-    description: json['description'] ?? '',
-    priority: Priority.values[json['priority']],
-    dueDate: DateTime.parse(json['dueDate']),
-    isCompleted: json['isCompleted'] ?? false,
-  );
+        id: json['id'],
+        title: json['title'],
+        description: json['description'] ?? '',
+        priority: Priority.values[json['priority']],
+        dueDate: DateTime.parse(json['dueDate']),
+        isCompleted: json['isCompleted'] ?? false,
+      );
 }
